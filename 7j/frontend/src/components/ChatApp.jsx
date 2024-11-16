@@ -17,8 +17,9 @@ const ChatApp = () => {
     try {
       // Send request to Flask API
       const response = await axios.post("http://localhost:5000/chat", {
-        message: userInput,
+        question: userInput, // This matches Flask's expected key
       });
+      
 
       // Add bot's reply
       const botMessage = { text: response.data.reply, sender: "bot" };

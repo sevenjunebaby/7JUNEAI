@@ -4,4 +4,5 @@ const API = axios.create({
   baseURL: 'http://localhost:5000', // Flask backend URL
 });
 
-export const sendMessage = (message) => API.post('/chat', { message });
+export const sendMessage = (question) => API.post('/chat', { question });
+
