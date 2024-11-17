@@ -11,7 +11,7 @@ CORS(app)
 
 # Load the content of document.md and prepare it for querying
 def load_documents():
-    markdown_path = "/home/wissal/Desktop/web/AI-7J/7j/backend/src/document.md"
+    markdown_path = "/home/wissal/Desktop/web/AI-7J/AI-7j/7j/backend/src/document.md"
     try:
         with open(markdown_path, 'r', encoding='utf-8') as file:
             markdown_text = file.read()

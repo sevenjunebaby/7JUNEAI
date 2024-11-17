@@ -10,7 +10,7 @@ body {
   }
   
   .chat-container {
-    width: 400px;
+    width: 850px;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -29,7 +29,7 @@ body {
   }
   
   .bot-message {
-    background-color: #e8e048;
+    background-color:transparent;
     padding: 5px;
     margin: 5px 0;
     border-radius: 10px;
