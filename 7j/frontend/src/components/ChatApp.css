@@ -12,7 +12,7 @@ body {
   
   .chat-container {
     width: 850px;
-    background-color: rgba(255, 239, 239, 0.8); /* Slightly transparent white */
+    background-color: rgba(224, 233, 236, 0.8); /* Slightly transparent white */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(59, 59, 59, 0.1);
