@@ -1,9 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: url('/home/wissal/Desktop/web/AI-7J/AI-7j/7j/frontend/public/background.jpg') no-repeat center center fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: last baseline;
     height: 100vh;
     margin: 0;
     gap: 10px;
@@ -11,13 +12,15 @@ body {
   
   .chat-container {
     width: 850px;
-    background-color: #fff;
+    background-color: rgba(255, 239, 239, 0.8); /* Slightly transparent white */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(59, 59, 59, 0.1);
     text-align: center;
     margin: 10px;
     gap: 10px;
+    backdrop-filter: blur(2px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
   }
   
   .user-message {
@@ -55,5 +58,10 @@ body {
   
   button:hover {
     background-color: #414243;
+  }
+  .typing-indicator {
+    font-style: italic;
+    color: gray;
+    margin-top: 5px;
   }
   
