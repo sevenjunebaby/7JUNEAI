@@ -60,21 +60,14 @@ body {
     margin: 10px;
   }
   
-  button {
-    padding: 10px;
-    background-color: #414243;
-    color: white;
-    border: none;
-    border-radius: 4px;
+  .send-button {
+    width: 32px; /* Adjust size as needed */
+    height: 32px; /* Adjust size as needed */
     cursor: pointer;
+    transition: transform 0.2s ease;
   }
   
-  button:hover {
-    background-color: #414243;
-  }
-  .typing-indicator {
-    font-style: italic;
-    color: gray;
-    margin-top: 5px;
+  .send-button:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
   }
   

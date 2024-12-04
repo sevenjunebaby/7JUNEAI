@@ -82,7 +82,13 @@ const ChatApp = () => {
           onChange={(e) => setUserInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
         />
-        <button onClick={sendMessage}>Send</button>
+       
+       <img
+      src="/send.png"
+      alt="Send"
+      className="send-button"
+      onClick={sendMessage}
+    />
       </div>
     </div>
   );
