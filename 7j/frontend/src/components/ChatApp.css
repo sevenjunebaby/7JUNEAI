@@ -65,6 +65,8 @@ body {
     height: 32px; /* Adjust size as needed */
     cursor: pointer;
     transition: transform 0.2s ease;
+    color: gray;
+   
   }
   
   .send-button:hover {

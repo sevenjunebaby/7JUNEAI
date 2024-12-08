@@ -73,7 +73,9 @@ const ChatApp = () => {
             </div>
           ))}
           {isTyping && <div className="typing-indicator">Typing...</div>}
+          
         </div>
+        
         <input
           type="text"
           id="user-input"
@@ -82,14 +84,15 @@ const ChatApp = () => {
           onChange={(e) => setUserInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
         />
-       
        <img
       src="/send.png"
       alt="Send"
       className="send-button"
       onClick={sendMessage}
     />
+      
       </div>
+      
     </div>
   );
   
