@@ -65,16 +65,26 @@ body {
     height: 32px; /* Adjust size as needed */
     cursor: pointer;
     transition: transform 0.2s ease;
-    color: gray;
+    
 
    
   }
   
   .send-button:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1); 
   }
   .x{
     display: flex;
     align-items: center;
 
+  }
+  .stop-button {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .stop-button:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
   }
