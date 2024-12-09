@@ -53,7 +53,7 @@ const ChatApp = () => {
 
   return (
     <div className="app-container">
-      {/* Video Background */}
+     
       <div className="video-background">
         <video autoPlay muted loop>
           <source src="/background.mp4" type="video/mp4" />
@@ -61,21 +61,21 @@ const ChatApp = () => {
         </video>
       </div>
   
-      {/* Chat Container */}
+      
       <div className="chat-container">
         <div id="chat-box">
           {messages.map((msg, index) => (
             <div
               key={index}
-              className={msg.sender === "user" ? "user-message" : "bot-message"}
-            >
+              className={msg.sender === "user" ? "user-message" : "bot-message"} >
               {msg.text}
             </div>
           ))}
           {isTyping && <div className="typing-indicator">Typing...</div>}
           
         </div>
-        
+        <di className="x">
+
         <input
           type="text"
           id="user-input"
@@ -84,14 +84,16 @@ const ChatApp = () => {
           onChange={(e) => setUserInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
         />
+       
        <img
       src="/send.png"
       alt="Send"
       className="send-button"
       onClick={sendMessage}
     />
-      
+     </di>
       </div>
+      
       
     </div>
   );

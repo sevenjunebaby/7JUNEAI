@@ -66,10 +66,15 @@ body {
     cursor: pointer;
     transition: transform 0.2s ease;
     color: gray;
+
    
   }
   
   .send-button:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
   }
-  
+  .x{
+    display: flex;
+    align-items: center;
+
+  }
