@@ -76,7 +76,7 @@ const ChatApp = () => {
     <div className="app-container">
       <div className="video-background">
         <video autoPlay muted loop>
-          <source src="/background.mp4" type="video/mp4" />
+          <source src="" type="video/mp4" />
         </video>
       </div>
 
