@@ -3,7 +3,7 @@ body {
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: last baseline;
+    align-items:center;
     height: 100vh;
     margin: 0;
     gap: 10px;
@@ -26,7 +26,7 @@ body {
   .chat-container {
     width: 850px;
     background-color: rgba(243, 183, 183, 0.8); /* Slightly transparent white */
-    padding: 20px;
+    padding: 80px 20px 50px; 
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(59, 59, 59, 0.1);
     text-align: center;
@@ -87,4 +87,69 @@ body {
   .stop-button:hover{
     transform: scale(1.1);
     transition: transform 0.2s ease;
+  }
+
+
+
+
+  .app-header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .app-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .header-nav {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .header-nav li {
+    display: inline;
+  }
+  
+  .header-nav a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
+  .header-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .app-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Updated z-index for stacking context */
+  }
+  
+  .app-footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .app-footer a:hover {
+    text-decoration: underline;
   }
