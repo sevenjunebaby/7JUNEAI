@@ -23,15 +23,31 @@ body {
     object-fit: cover; /* Ensures the video fills the screen */
   }
   
+  
+  .text-token-text-tertiary {
+    color: var(--text-tertiary);
+  }
+  .icon-md {
+    height: 18px;
+    width: 18px;
+  }
+  .icon-md, .icon-sidebar {
+    stroke-width: 1.5;
+    flex-shrink: 0;
+  }
+  * {
+    scrollbar-color: var(--main-surface-tertiary) transparent;
+  }
   .chat-container {
-    width: 850px;
-    background-color: rgba(243, 183, 183, 0.8); /* Slightly transparent white */
+    width: 900px;
+    background-color: transparent; /* Slightly transparent white */
     padding: 80px 20px 50px; 
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(59, 59, 59, 0.1);
+    border-color: #333;
+    box-shadow: 0 0 10px rgba(2, 2, 2, 0.1);
     text-align: center;
     margin: 10px;
-    gap: 10px;
+    
     backdrop-filter: blur(2px); /* Apply blur effect */
     -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
   }
@@ -89,27 +105,51 @@ body {
     transition: transform 0.2s ease;
   }
 
-.btheader{
-  width: 10%;
-  height: 36px;
-}
 
+.bt{
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding-bottom: .375rem;
+  padding-top: .375rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  border-radius: .5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  gap: .25rem;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  text-transform: none;
+  background-color: transparent;
+  background-image: none;
+}
 
   .app-header {
     background-color:transparent;
-    padding: 20px;
-   
+    padding: 10px;
+    padding-bottom: 10px;
+   display: flex;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     border-bottom: 1px solid #ddd;
   }
+  .headeritems{
+
+  display: flex;
+  padding-left: 50px;
+  
+  }
   
   .app-header h1 {
     margin: 0;
     font-size: 24px;
     color: #333;
+    
   }
   
   .header-nav {
@@ -148,7 +188,7 @@ body {
   }
   
   .app-footer a {
-    color: #4CAF50;
+    color: #ffc2f3;
     text-decoration: none;
     margin: 0 5px;
   }
