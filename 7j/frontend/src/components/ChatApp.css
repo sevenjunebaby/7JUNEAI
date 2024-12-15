@@ -122,15 +122,33 @@ body {
   align-items: center;
   cursor: pointer;
   display: flex;
+  font-feature-settings: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-variation-settings: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
   text-transform: none;
   background-color: transparent;
   background-image: none;
+  
+  border: 0 solid #e3e3e3;
+  box-sizing: border-box;
+
+  
 }
 
   .app-header {
     background-color:transparent;
     padding: 10px;
     padding-bottom: 10px;
+  
+   gap: 20px;
+   padding: 10px 20px;
    display: flex;
     position: fixed;
     top: 0;
@@ -139,10 +157,16 @@ body {
     border-bottom: 1px solid #ddd;
   }
   .headeritems{
-
+  padding: 10px 20px; 
   display: flex;
-  padding-left: 50px;
-  
+  gap: 20px;
+  }
+
+  .icon-xl-heavy {
+    stroke-width: 2;
+    flex-shrink: 0;
+    height: 24px;
+    width: 24px;
   }
   
   .app-header h1 {
