@@ -33,13 +33,14 @@ body {
     box-shadow: 0 0 10px rgba(2, 2, 2, 0.1);
     text-align: center;
     margin: 10px;
-    
+    border: 1px solid #ddd;
     backdrop-filter: blur(2px); /* Apply blur effect */
     -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
   }
   
+  
   .user-message {
-    background-color: #e3e3e3;
+    background-color:transparent;
     padding: 5px;
     margin: 5px 0;
     border-radius: 10px;
@@ -78,6 +79,7 @@ body {
   .x{
     display: flex;
     align-items: center;
+    background-color: transparent;
 
   }
   .stop-button {
@@ -189,8 +191,8 @@ body {
   .app-footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color:transparent;
+   
     font-size: 14px;
     position: fixed;
     bottom: 0;
@@ -199,7 +201,7 @@ body {
   }
   
   .app-footer a {
-    color: #ffc2f3;
+    color: #d59c15;
     text-decoration: none;
     margin: 0 5px;
   }
@@ -207,3 +209,14 @@ body {
   .app-footer a:hover {
     text-decoration: underline;
   }
+  /* Default Light Mode */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
