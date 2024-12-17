@@ -97,6 +97,7 @@ const ChatApp = () => {
       <button className="bt" onClick={toggleMode}>
   <div className="button-content">
   <span>7 JUNE</span>
+  <img className="somber" src="dark.png"></img>
     
   </div>
 </button>
