@@ -7,6 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     gap: 10px;
+    
   }
   
   
@@ -26,6 +27,7 @@ body {
   }
   .chat-container {
     width: 900px;
+    max-height: 580px;
     background-color: transparent; /* Slightly transparent white */
     padding: 80px 20px 50px; 
     border-radius: 8px;
