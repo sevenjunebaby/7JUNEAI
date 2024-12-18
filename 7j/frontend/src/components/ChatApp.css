@@ -29,14 +29,16 @@ body {
     background-color: transparent; /* Slightly transparent white */
     padding: 80px 20px 50px; 
     border-radius: 8px;
-    border-color: #333;
+   
     box-shadow: 0 0 10px rgba(2, 2, 2, 0.1);
     text-align: center;
     margin: 10px;
-    border: 1px solid #ddd;
+    
     backdrop-filter: blur(2px); /* Apply blur effect */
     -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
+    box-shadow: 0 0 15px rgba(147, 147, 147, 0.8); 
   }
+  
   
   
   .user-message {
@@ -44,6 +46,7 @@ body {
     padding: 5px;
     margin: 5px 0;
     border-radius: 10px;
+    color: var(--text-secondary);
     text-align: right;
   }
   
@@ -56,12 +59,15 @@ body {
   }
   
   #user-input {
+    background-color: transparent;
     width: calc(100% - 90px);
     padding: 10px;
-    border: 1px solid #fff4f4;
+    border: 1px solid #808080;
     border-radius: 4px;
     margin: 10px;
+    color: inherit;
   }
+  
   
   .send-button {
     width: 32px; /* Adjust size as needed */
@@ -172,7 +178,7 @@ body {
     background-color:transparent;
     padding: 10px;
     padding-bottom: 10px;
-  
+    box-shadow: 0 0 15px rgba(230, 230, 230, 0.8); 
    gap: 20px;
    padding: 5lspx 20px;
    display: flex;
@@ -180,7 +186,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    border-bottom: 1px solid #ddd;
+   
   }
   .headeritems{
   padding: 10px 20px; 
