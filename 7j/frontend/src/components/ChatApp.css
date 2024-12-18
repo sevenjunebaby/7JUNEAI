@@ -79,10 +79,11 @@ body {
     padding: 0px 5px;
     
   }
-  .bt:hover {
-    background-color: #c7c7c7; /* Slightly lighter background */
+  .bt2:hover {
     box-shadow: 0 0 15px rgba(197, 197, 197, 0.8); /* Glowing white light */
-    color: #fff; /* Maintain text color */
+  }
+  .bt:hover {
+    box-shadow: 0 0 15px rgba(197, 197, 197, 0.8); /* Glowing white light */
   }
   
   .send-button:hover {
@@ -108,13 +109,7 @@ body {
 
 .bt{
   color: var(--text-secondary);
-  font-weight: 600;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  padding-bottom: .375rem;
-  padding-top: .375rem;
-  padding-left: .75rem;
-  padding-right: .75rem;
+  
   border-radius: .5rem;
   white-space: nowrap;
   overflow: hidden;
@@ -130,13 +125,43 @@ body {
   font-weight: inherit;
   letter-spacing: inherit;
   line-height: inherit;
-  margin: 0;
-  padding: 0;
+ 
   text-transform: none;
   background-color: transparent;
   background-image: none;
   font-family: system-ui;
   border: 0 solid #e3e3e3;
+  box-sizing: border-box;
+  font-weight: bold;
+
+  
+}
+.bt2{
+  color: var(--text-secondary);
+  border: 0 solid #000000;
+  padding: 10px 18px;
+  border: 0 solid #e3e3e3;
+  border-radius: .5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  gap: .25rem;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-feature-settings: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-variation-settings: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+ 
+  text-transform: none;
+  background-color: transparent;
+  background-image: none;
+  font-family: system-ui;
+  
   box-sizing: border-box;
   font-weight: bold;
 
@@ -149,7 +174,7 @@ body {
     padding-bottom: 10px;
   
    gap: 20px;
-   padding: 10px 20px;
+   padding: 5lspx 20px;
    display: flex;
     position: fixed;
     top: 0;
