@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
+
 import axios from "axios";
 import "./ChatApp.css";
 
@@ -6,7 +7,11 @@ const ChatApp = () => {
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false); 
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    // Retrieve the saved theme from localStorage, default to light mode
+    const savedMode = localStorage.getItem("darkMode");
+    return savedMode === "true"; // Convert string to boolean
+  });
   const stopTypingRef = useRef(false); // Use ref to handle immediate checks
   const typingTimeoutRef = useRef(null); // Store timeout reference
 
@@ -73,17 +78,35 @@ const ChatApp = () => {
     setIsTyping(false); // Update UI state
   };
   // eslint-disable-next-line no-unused-vars
+
   const toggleMode = () => {
-    setIsDarkMode(!isDarkMode);
-    if (!isDarkMode) {
+    const newMode = !isDarkMode;
+    setIsDarkMode(newMode);
+
+    // Add or remove the class from the body
+    if (newMode) {
       document.body.classList.add("dark-mode");
       document.body.classList.remove("light-mode");
     } else {
       document.body.classList.add("light-mode");
       document.body.classList.remove("dark-mode");
     }
+
+    // Save the theme preference to localStorage
+    localStorage.setItem("darkMode", newMode);
   };
-  
+
+  useEffect(() => {
+    // Apply the saved mode's class to the document body on load
+    if (isDarkMode) {
+      document.body.classList.add("dark-mode");
+      document.body.classList.remove("light-mode");
+    } else {
+      document.body.classList.add("light-mode");
+      document.body.classList.remove("dark-mode");
+    }
+  }, [isDarkMode]);
+
 
 
   return (
