@@ -12,6 +12,7 @@ const ChatApp = () => {
     const savedMode = localStorage.getItem("darkMode");
     return savedMode === "true"; // Convert string to boolean
   });
+  const chatBoxRef = useRef(null);
   const stopTypingRef = useRef(false); // Use ref to handle immediate checks
   const typingTimeoutRef = useRef(null); // Store timeout reference
 
@@ -95,6 +96,11 @@ const ChatApp = () => {
     // Save the theme preference to localStorage
     localStorage.setItem("darkMode", newMode);
   };
+  useEffect(() => {
+    if (chatBoxRef.current) {
+      chatBoxRef.current.scrollTop = chatBoxRef.current.scrollHeight;
+    }
+  }, [messages]);
 
   useEffect(() => {
     // Apply the saved mode's class to the document body on load
@@ -133,7 +139,7 @@ const ChatApp = () => {
     <div className="app-container">
 
       <div className="chat-container">
-        <div id="chat-box">
+        <div id="chat-box" className="chat-box"  ref={chatBoxRef}>
           {messages.map((msg, index) => (
             <div
               key={index}

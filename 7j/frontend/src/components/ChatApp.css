@@ -7,7 +7,6 @@ body {
     height: 100vh;
     margin: 0;
     gap: 10px;
-    
   }
   
   
@@ -27,9 +26,12 @@ body {
     scrollbar-color: var(--main-surface-tertiary) transparent;
   }
   .chat-container {
-    width: 900px;
-    max-height: 580px;
     
+    width: 900px;
+    overflow: hidden; 
+   
+    max-height: 580px;
+    padding: 20px;
     background-color: transparent; /* Slightly transparent white */
     padding: 80px 20px 50px; 
     border-radius: 8px;
@@ -43,6 +45,19 @@ body {
   }
   
   
+.chat-box {
+  max-height: 400px; /* Limit height of chat-box to enable scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px;
+  border-radius: 8px;
+  background-color: transparent; /* Slightly transparent white */
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+ 
+}
+.dark-mode .chat-box {
+  background-color: transparent; /* Adjust for dark mode */
+  
+}
   
   .user-message {
     
@@ -70,6 +85,8 @@ body {
     border-radius: 4px;
     margin: 10px;
     color: inherit;
+    
+
   }
   
   
