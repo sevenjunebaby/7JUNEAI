@@ -1,5 +1,5 @@
 # 7 june AI 
- flask X react
+
 ## Running a Flask and React Project
 
 This guide provides step-by-step instructions to run a project using Flask as the backend and React as the frontend.
