@@ -20,7 +20,7 @@ Before running the project, ensure you have the following installed on your syst
 ```bash
 1. Navigate to the Backend Directory :
 
-cd path/to/your/flask/backend
+```cd path/to/your/flask/backend
 
 2. Create a Virtual Environment :
 
