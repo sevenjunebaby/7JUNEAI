@@ -1,4 +1,4 @@
-<iframe src="/home/wissal/Desktop/web/AI-7J/AI-7j/7j/RAG from scratch_ Generation.pptx" 
+<iframe src="https://docs.google.com/presentation/d/1eRJwzbdSv71e9Ou9yeqziZrz1UagwX8B1kL4TbL5_Gc/edit#slide=id.g2b46f2cb556_0_0" 
         frameborder="0" 
         width="700" 
         height="400" 
