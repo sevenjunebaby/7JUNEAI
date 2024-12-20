@@ -1,3 +1,12 @@
+<iframe src="/home/wissal/Desktop/web/AI-7J/AI-7j/7j/RAG from scratch_ Generation.pptx" 
+        frameborder="0" 
+        width="700" 
+        height="400" 
+        allowfullscreen="true" 
+        mozallowfullscreen="true" 
+        webkitallowfullscreen="true">
+</iframe>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
