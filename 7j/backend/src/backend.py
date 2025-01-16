@@ -25,7 +25,7 @@ if not LANGCHAIN_API_KEY or not GOOGLE_API_KEY:
 
 # Load the content of document.md and prepare it for querying
 def load_documents() -> list[Document]:
-    markdown_path = "/home/wissal/Desktop/web/AI-7J/AI-7j/7j/backend/src/document.md"
+    markdown_path = "./document.md"
     try:
         with open(markdown_path, 'r', encoding='utf-8') as file:
             markdown_text = file.read()
