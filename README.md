@@ -1,4 +1,4 @@
-# 7 june AI 
+# 7 JUNE AI 
 
 ## Running a Flask and React Project
 
